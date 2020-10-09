@@ -3,7 +3,11 @@
   "version": "1.0.2",
   "description": "A minimalist Defold TypeScript template",
   "repository": "github:thejustinwalsh/defold-typescript",
-  "keywords": ["typescript", "lua", "defold"],
+  "keywords": [
+    "typescript",
+    "lua",
+    "defold"
+  ],
   "author": "Justin Walsh (https://thejustinwalsh.com/)",
   "license": "MIT",
   "engines": {
@@ -17,7 +21,7 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.4.0",
     "@typescript-eslint/parser": "^4.4.0",
-    "defold-types": "^1.0.0",
+    "defold-types": "^1.0.3",
     "eslint": "^7.10.0",
     "patch-package": "^6.2.2",
     "typescript": "^4.0.3",
