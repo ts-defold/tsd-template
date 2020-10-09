@@ -1,15 +1,12 @@
-# Defold Types
-> Typescript scaffold template for [Defold](https://defold.com/)
-
-*Note that you will need to have [Node.js](https://nodejs.org) installed.*
-
-## Defold Typescript
+# Defold Typescript
 A dev environment for Defold that transpiles TypeScript into lua using typescript-to-lua.
 This 🗝 turnkey Defold TypeScript dev environment features:
 > ⭐ .vscode folder based project  
 > ⭐ lua-types and defold-types for autocomplete and inline docs  
 > ⭐ eslint with sane typescript defaults  
-> ⭐ patched typescript-to-lua to generate *.script files  
+> ⭐ patched typescript-to-lua to generate *.script files
+
+*Note that you will need to have [Node.js](https://nodejs.org) installed.*
 
 To get started simply use `npm run` and get going!
 > ✔ Use `npm run dev` to start a watcher that compiles and emits lua and script when you save  
