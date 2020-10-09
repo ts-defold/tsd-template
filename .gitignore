@@ -17,3 +17,7 @@ node_modules/
 
 # Optional eslint cache
 .eslintcache
+
+# Generated
+modules/
+scripts/
