@@ -1,5 +1,5 @@
 diff --git a/node_modules/typescript-to-lua/dist/LuaPrinter.js b/node_modules/typescript-to-lua/dist/LuaPrinter.js
-index 5efaeba..7e8087f 100644
+index 5efaeba..4402aab 100644
 --- a/node_modules/typescript-to-lua/dist/LuaPrinter.js
 +++ b/node_modules/typescript-to-lua/dist/LuaPrinter.js
 @@ -580,7 +580,7 @@ let LuaPrinter = /** @class */ (() => {
@@ -7,7 +7,7 @@ index 5efaeba..7e8087f 100644
          buildSourceMap(sourceRoot, rootSourceNode) {
              const map = new source_map_1.SourceMapGenerator({
 -                file: utils_1.trimExtension(this.sourceFile) + ".lua",
-+                file: utils_1.trimExtension(this.sourceFile) + (this.options.trimExtensions !== true ?  ".lua" : ""),
++                file: utils_1.trimExtension(this.sourceFile) + (this.options.trimExtensions === true && /.*\..*\.ts$/.test(this.sourceFile) ?  "" : ".lua"),
                  sourceRoot,
              });
              let generatedLine = 1;
@@ -28,7 +28,7 @@ index 811a8ad..3a8da50 100644
  function updateParsedConfigFile(parsedConfigFile) {
      let hasRootLevelOptions = false;
 diff --git a/node_modules/typescript-to-lua/dist/transpilation/transpiler.js b/node_modules/typescript-to-lua/dist/transpilation/transpiler.js
-index de4c40f..9b7aca1 100644
+index de4c40f..664b30e 100644
 --- a/node_modules/typescript-to-lua/dist/transpilation/transpiler.js
 +++ b/node_modules/typescript-to-lua/dist/transpilation/transpiler.js
 @@ -46,7 +46,7 @@ class Transpiler {
@@ -36,7 +36,7 @@ index de4c40f..9b7aca1 100644
              emitPlan = files.map(file => {
                  const pathInOutDir = path.resolve(outDir, path.relative(rootDir, file.fileName));
 -                const outputPath = utils_1.normalizeSlashes(utils_1.trimExtension(pathInOutDir) + ".lua");
-+                const outputPath = utils_1.normalizeSlashes(utils_1.trimExtension(pathInOutDir) + (options.trimExtensions !== true ?  ".lua" : ""));
++                const outputPath = utils_1.normalizeSlashes(utils_1.trimExtension(pathInOutDir) + (options.trimExtensions === true && /.*\..*\.ts$/.test(pathInOutDir) ?  "" : ".lua"));
                  return { ...file, outputPath };
              });
          }

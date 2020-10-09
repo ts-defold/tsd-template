@@ -21,3 +21,4 @@ node_modules/
 # Generated
 modules/
 scripts/
+!src/**

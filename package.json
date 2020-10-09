@@ -1,6 +1,6 @@
 {
   "name": "defold-typescript",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A minimalist Defold TypeScript template",
   "repository": "github:thejustinwalsh/defold-typescript",
   "keywords": ["typescript", "lua", "defold"],
