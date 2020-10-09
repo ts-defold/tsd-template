@@ -1,0 +1,23 @@
+{
+  "name": "defold-ts-template",
+  "version": "1.0.0",
+  "description": "A minimalist Defold TypeScript template",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "patch-package",
+    "build": "tstl",
+    "dev": "tstl --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.4.0",
+    "@typescript-eslint/parser": "^4.4.0",
+    "defold-types": "^1.0.0",
+    "eslint": "^7.10.0",
+    "patch-package": "^6.2.2",
+    "typescript": "^4.0.3",
+    "typescript-to-lua": "^0.35.0"
+  },
+  "dependencies": {}
+}

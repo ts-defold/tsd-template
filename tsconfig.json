@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "lib": ["esnext"],
+        "module": "esnext",
+        "moduleResolution": "node",
+        "strict": true,
+        "outDir": "./",
+        "types": ["defold-types"]
+    },
+    "include": [
+        "src/*",
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules"
+    ],
+    "tstl": {
+        "luaTarget": "5.1",
+        "luaLibImport": "inline",
+        "trimExtensions": true,
+    }
+}

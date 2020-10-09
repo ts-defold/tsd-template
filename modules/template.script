@@ -1,0 +1,19 @@
+--[[ Generated with https://github.com/TypeScriptToLua/TypeScriptToLua ]]
+-- Lua Library inline imports
+function __TS__Class(self)
+    local c = {prototype = {}}
+    c.prototype.__index = c.prototype
+    c.prototype.constructor = c
+    return c
+end
+
+local ____exports = {}
+____exports.Template = __TS__Class()
+local Template = ____exports.Template
+Template.name = "Template"
+function Template.prototype.____constructor(self)
+end
+function Template.prototype.init(self)
+    print("Template Module Init")
+end
+return ____exports
