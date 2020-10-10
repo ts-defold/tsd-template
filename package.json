@@ -19,6 +19,7 @@
     "dev": "tstl --watch"
   },
   "devDependencies": {
+    "@ts-defold/types": "^1.0.3",
     "@typescript-eslint/eslint-plugin": "^4.4.0",
     "@typescript-eslint/parser": "^4.4.0",
     "eslint": "^7.10.0",
