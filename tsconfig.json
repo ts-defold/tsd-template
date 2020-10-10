@@ -1,12 +1,10 @@
 {
     "compilerOptions": {
         "target": "esnext",
-        "lib": ["esnext"],
-        "module": "esnext",
         "moduleResolution": "node",
         "strict": true,
         "outDir": "./",
-        "types": ["defold-types"]
+        "types": ["@ts-defold/types"]
     },
     "include": [
         "src/*",
@@ -15,9 +13,15 @@
     "exclude": [
         "node_modules"
     ],
+    "ts-node": {
+        "transpileOnly": true
+    },
     "tstl": {
         "luaTarget": "5.1",
         "luaLibImport": "inline",
         "trimExtensions": true,
+        "luaPlugins": [
+            { "name": "./plugins/defoldScriptExports.ts" },
+        ]
     }
 }

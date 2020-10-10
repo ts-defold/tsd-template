@@ -6,6 +6,10 @@ interface Props {
 }
 go.property("excitement", 100);
 
+function magic(): void {
+    print("local?");
+}
+
 // Init (implicit self)
 function init(): void {
     print("Welcome to defold-typescript; A dev environment for Defold that transpiles TypeScript into lua using typescript-to-lua.");
@@ -44,3 +48,5 @@ function on_message(this: Props, message_id: hash, message: string, sender: any)
         print(`We ❤ TypeScript and are ${this.excitement}% excited for TypeScript in Defold!`);
     }
 }
+
+export {};

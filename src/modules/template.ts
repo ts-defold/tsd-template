@@ -4,3 +4,7 @@ export class Template {
         print("Template Module Init");
     }
 }
+
+function init() {
+    return "👀";
+}
