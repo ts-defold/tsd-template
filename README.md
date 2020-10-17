@@ -12,9 +12,6 @@ To get started simply use `npm run` and get going!
 > ✔ Use `npm run dev` to start a watcher that compiles and emits lua and script when you save  
 > ✔ Use `npm run build` to just compile your ts, sans watcher  
 
-**We ❤ TypeScript!**
-
-
 ## Installation
 
 1. Create a new Defold project
@@ -24,7 +21,7 @@ To get started simply use `npm run` and get going!
 3. Use [degit](https://www.npmjs.com/package/degit) to bring in the template
 
 ```bash
-npx degit thejustinwalsh/defold-typescript --force
+npx degit @ts-defold/tsd-template --force
 ```
 
 4. Initialize the modules
@@ -43,3 +40,7 @@ npm run watch # Watch for changes and regenerate files on save
 ```
 code .
 ```
+
+<p align="center" class="h4">
+  Typescript :heart: Defold
+</p>
