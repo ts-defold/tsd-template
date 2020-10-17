@@ -1,4 +1,4 @@
-# Defold Typescript
+# Defold TypeScript
 A dev environment for Defold that transpiles TypeScript into lua using typescript-to-lua.
 This 🗝 turnkey Defold TypeScript dev environment features:
 > ⭐ .vscode folder based project  
@@ -42,5 +42,5 @@ code .
 ```
 
 <p align="center" class="h4">
-  Typescript :heart: Defold
+  TypeScript :heart: Defold
 </p>
