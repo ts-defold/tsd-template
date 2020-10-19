@@ -18,7 +18,7 @@ To get started simply use `npm run` and get going!
 
 2. `cd` into the root directory of your new Defold project
 
-3. Use [degit](https://www.npmjs.com/package/degit) to bring in the template
+3. Fork this tempalte or use [degit](https://www.npmjs.com/package/degit) to download the template locally
 
 ```bash
 npx degit @ts-defold/tsd-template --force
