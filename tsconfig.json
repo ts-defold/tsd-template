@@ -8,6 +8,7 @@
         "moduleResolution": "node",
         "types": ["@ts-defold/types"],
 
+        "rootDir": "src",
         "outDir": "app",
         "strict": true,
         "noUnusedLocals": false,

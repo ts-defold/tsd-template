@@ -1,11 +1,16 @@
-// Properties
+// import a module
+import Template from "../modules/template";
+
 interface props {
     excitement: number,
-    doOnce: boolean
+    doOnce: boolean,
+    template: Template
 }
 go.property("excitement", 100);
 
 export function init(this: props): void {
+    this.template = new Template();
+
     print("Welcome to defold-typescript; A dev environment for Defold that transpiles TypeScript into lua using typescript-to-lua.");
     print("");
 
@@ -22,12 +27,7 @@ export function update(this: props, _dt: number): void {
 
 export function on_message(this: props, message_id: hash, _message: string, _sender: url): void {
     if (message_id == hash("features")) {
-        const features: Array<string> = [
-            "  ⭐ .vscode folder based project",
-            "  ⭐ lua-types and defold-types for autocomplete and inline docs",
-            "  ⭐ eslint with sane typescript defaults",
-            "  ⭐ patched typescript-to-lua to generate *.script files"
-        ];
+        const features = this.template.features();
         for (let i = 0; i < features.length; ++i) {
             print(features[i]);
         }
