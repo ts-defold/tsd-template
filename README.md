@@ -1,4 +1,4 @@
-# Defold Typescript
+# Defold TypeScript
 A dev environment for Defold that transpiles TypeScript into lua using typescript-to-lua.
 This 🗝 turnkey Defold TypeScript dev environment features:
 > ⭐ .vscode folder based project  
@@ -21,7 +21,7 @@ To get started simply use `npm run` and get going!
 3. Use [degit](https://www.npmjs.com/package/degit) to bring in the template
 
 ```bash
-npx degit thejustinwalsh/defold-typescript --force
+npx degit @ts-defold/tsd-template --force
 ```
 
 4. Initialize
@@ -42,7 +42,7 @@ code .
 ```
 
 7. Open `app/game.project` in Defold
-> start making games with typescript!
+> and start making games with typescript!
 
 <p align="center" class="h4">
   TypeScript :heart: Defold
