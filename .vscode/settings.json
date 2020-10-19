@@ -1,6 +1,7 @@
 {
     "files.associations": {
-        "*.script": "lua"
+        "*.script": "lua",
+        "*.gui_script": "lua"
     },
     "files.exclude": {
         "node_modules/": true,

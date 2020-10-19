@@ -1,26 +1,26 @@
-require("lib/typescript");
-
 // Properties
-interface Props {
-    excitement: number;
+interface props {
+    excitement: number,
+    doOnce: boolean
 }
 go.property("excitement", 100);
 
-function magic(): void {
-    print("local?");
-}
-
-// Init (implicit self)
-function init(): void {
+export function init(this: props): void {
     print("Welcome to defold-typescript; A dev environment for Defold that transpiles TypeScript into lua using typescript-to-lua.");
     print("");
 
-    print("This 🗝 turnkey Defold TypeScript dev environment features:");
-    msg.post("#", "features");
+    print("Turnkey Defold TypeScript dev environment features:");
+    this.doOnce = true;
 }
 
-// Init (explicit self, typed)
-function on_message(this: Props, message_id: hash, message: string, sender: any): void {
+export function update(this: props, _dt: number): void {
+    if (this.doOnce) {
+        msg.post("#", "features");
+        this.doOnce  = false;
+    }
+}
+
+export function on_message(this: props, message_id: hash, _message: string, _sender: url): void {
     if (message_id == hash("features")) {
         const features: Array<string> = [
             "  ⭐ .vscode folder based project",
@@ -43,10 +43,7 @@ function on_message(this: Props, message_id: hash, message: string, sender: any)
         msg.post("#", "stats");
     }
     else if (message_id == hash("stats")) {
-        print("System:", sys.get_sys_info().system_name);
         print("Collected Garbage Size:", collectgarbage("count") * 1024);
         print(`We ❤ TypeScript and are ${this.excitement}% excited for TypeScript in Defold!`);
     }
 }
-
-export {};

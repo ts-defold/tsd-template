@@ -19,6 +19,18 @@ node_modules/
 .eslintcache
 
 # Generated
-modules/
-scripts/
+app/modules/
+app/scripts/
 !src/**
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Defold
+app/.internal
+app/build
+.externalToolBuilders
+.lock-wscript
+*.pyc
+app/builtins

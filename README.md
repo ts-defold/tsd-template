@@ -12,9 +12,6 @@ To get started simply use `npm run` and get going!
 > ✔ Use `npm run dev` to start a watcher that compiles and emits lua and script when you save  
 > ✔ Use `npm run build` to just compile your ts, sans watcher  
 
-**We ❤ TypeScript!**
-
-
 ## Installation
 
 1. Create a new Defold project
@@ -27,19 +24,26 @@ To get started simply use `npm run` and get going!
 npx degit thejustinwalsh/defold-typescript --force
 ```
 
-4. Initialize the modules
+4. Initialize
 ```bash
 npm install
 ```
 
-5. Profit 💰
+5. Generate
 ```bash
 npm run build # Transpile the TypeScript files to lua
 # or
 npm run watch # Watch for changes and regenerate files on save
 ```
 
-6. VS Code
+6. Code
 ```
 code .
 ```
+
+7. Open `app/game.project` in Defold
+> start making games with typescript!
+
+<p align="center" class="h4">
+  TypeScript :heart: Defold
+</p>
