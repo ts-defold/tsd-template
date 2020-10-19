@@ -20,7 +20,7 @@
     "dev": "tstl --watch"
   },
   "devDependencies": {
-    "@ts-defold/tstl-export-as-global": "0.0.1",
+    "@ts-defold/tstl-export-as-global": "^0.0.2",
     "@ts-defold/types": "^1.1.10",
     "@typescript-eslint/eslint-plugin": "^4.4.0",
     "@typescript-eslint/parser": "^4.4.0",

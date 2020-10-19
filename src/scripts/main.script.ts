@@ -1,5 +1,5 @@
 // import a module
-import Template from "../modules/template";
+import { Template } from "../modules/template";
 
 interface props {
     excitement: number,

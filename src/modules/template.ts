@@ -1,7 +1,7 @@
 /*
  * Example Module
 */
-export default class Template {
+export class Template {
 
     boasting: Array<string> = [
         "  ⭐ .vscode folder based project",
