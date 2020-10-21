@@ -1,21 +1,23 @@
 # Defold TypeScript
-A dev environment for Defold that transpiles TypeScript into lua using typescript-to-lua.
-This 🗝 turnkey [Defold](https://defold.com/) TypeScript dev environment features:
-> ⭐ .vscode folder based project  
-> ⭐ lua-types and defold-types for autocomplete and inline docs  
-> ⭐ eslint with sane typescript defaults  
-> ⭐ patched typescript-to-lua to generate *.script files
+<a href="https://discord.gg/eukcq5m"><img alt="Chat with us!" src="https://img.shields.io/discord/766898804896038942.svg?colorB=7581dc&logo=discord&logoColor=white"></a>
+
+A dev environment for [Defold](https://defold.com/) that transpiles TypeScript into lua using [TypeScriptToLua](https://github.com/TypeScriptToLua/TypeScriptToLua).
+
+## Features
+- Full Lua and Defold API type definitions for TypeScript auto-complete and type checking
+- Eslint config for handeling the caveats of TypeScriptToLua and keeping your code correct
+- Handles script, gui_script, and module exports using familar ES6 export syntax
+- Full BoilerPlate game project ready to transpile and go
+- File watcher via `npm run dev` to transpile on save
 
 *Note that you will need to have [Node.js](https://nodejs.org) installed.*
 
-To get started simply use `npm run` and get going!
-> ✔ Use `npm run dev` to start a watcher that compiles and emits lua and script when you save  
-> ✔ Use `npm run build` to just compile your ts, sans watcher  
+## Getting Started
+- Use `npm run dev` to start a watcher that compiles and emits lua and script when you save  
+- Use `npm run build` to just compile your ts, sans watcher  
 
 ## Installation
-
 1. Fork this tempalte or use [degit](https://www.npmjs.com/package/degit) to download the template locally
-
 ```bash
 npx degit @ts-defold/tsd-template --force
 ```
@@ -38,7 +40,7 @@ code .
 ```
 
 5. Open `app/game.project` in Defold
-> and start making games with typescript!
+- Start making games with TypesSript!
 
 <p align="center" class="h4">
   TypeScript :heart: Defold
