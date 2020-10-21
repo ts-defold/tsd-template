@@ -1,0 +1,8 @@
+# Defold Files
+*.atlas linguist-language=JSON5
+*.collection linguist-language=JSON5
+*.font linguist-language=JSON5
+*.go linguist-language=JSON5
+*.gui linguist-language=JSON5
+*.tilemap linguist-language=JSON5
+*.tilesource linguist-language=JSON5
