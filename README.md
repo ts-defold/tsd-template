@@ -14,34 +14,30 @@ To get started simply use `npm run` and get going!
 
 ## Installation
 
-1. Create a new [Defold](https://github.com/defold/defold) project
-
-2. `cd` into the root directory of your new Defold project
-
-3. Fork this tempalte or use [degit](https://www.npmjs.com/package/degit) to download the template locally
+1. Fork this tempalte or use [degit](https://www.npmjs.com/package/degit) to download the template locally
 
 ```bash
 npx degit @ts-defold/tsd-template --force
 ```
 
-4. Initialize
+2. Initialize
 ```bash
 npm install
 ```
 
-5. Generate
+3. Generate
 ```bash
 npm run build # Transpile the TypeScript files to lua
 # or
 npm run watch # Watch for changes and regenerate files on save
 ```
 
-6. Code
+4. Code
 ```
 code .
 ```
 
-7. Open `app/game.project` in Defold
+5. Open `app/game.project` in Defold
 > and start making games with typescript!
 
 <p align="center" class="h4">
