@@ -12,7 +12,7 @@ A dev environment for [Defold](https://defold.com/) that transpiles TypeScript i
 
 *Note that you will need to have [Node.js](https://nodejs.org) installed.*
 
-## Getting Started
+## Quick Start
 - Use `npm run dev` to start a watcher that compiles and emits lua and script when you save  
 - Use `npm run build` to just compile your ts, sans watcher  
 
