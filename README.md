@@ -1,6 +1,6 @@
 # Defold TypeScript
 A dev environment for Defold that transpiles TypeScript into lua using typescript-to-lua.
-This 🗝 turnkey Defold TypeScript dev environment features:
+This 🗝 turnkey [Defold](https://defold.com/) TypeScript dev environment features:
 > ⭐ .vscode folder based project  
 > ⭐ lua-types and defold-types for autocomplete and inline docs  
 > ⭐ eslint with sane typescript defaults  
@@ -14,7 +14,7 @@ To get started simply use `npm run` and get going!
 
 ## Installation
 
-1. Create a new Defold project
+1. Create a new [Defold](https://github.com/defold/defold) project
 
 2. `cd` into the root directory of your new Defold project
 
