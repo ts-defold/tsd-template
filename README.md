@@ -5,8 +5,8 @@ A dev environment for [Defold](https://defold.com/) that transpiles TypeScript i
 
 ## Features
 - Full Lua and Defold API type definitions for TypeScript auto-complete and type checking
-- Eslint config for handeling the caveats of TypeScriptToLua and keeping your code correct
-- Handles script, gui_script, and module exports using familar ES6 export syntax
+- Eslint config for handling the caveats of TypeScriptToLua and keeping your code correct
+- Handles script, gui_script, and module exports using familiar ES6 export syntax
 - Full BoilerPlate game project ready to transpile and go
 - File watcher via `npm run dev` to transpile on save
 
