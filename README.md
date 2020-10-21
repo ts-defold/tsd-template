@@ -17,7 +17,7 @@ A dev environment for [Defold](https://defold.com/) that transpiles TypeScript i
 - Use `npm run build` to just compile your ts, sans watcher  
 
 ## Installation
-1. Fork this tempalte or use [degit](https://www.npmjs.com/package/degit) to download the template locally
+1. Fork this template or use [degit](https://www.npmjs.com/package/degit) to download the template locally
 ```bash
 npx degit @ts-defold/tsd-template --force
 ```
@@ -40,7 +40,7 @@ code .
 ```
 
 5. Open `app/game.project` in Defold
-- Start making games with TypesSript!
+- Start making games with TypesScript!
 
 <p align="center" class="h4">
   TypeScript :heart: Defold
