@@ -16,6 +16,6 @@
         "@typescript-eslint/no-unused-vars": ["error", {"args": "all", "argsIgnorePattern": "^_"}],
         "@typescript-eslint/strict-boolean-expressions": ["error", {"allowString": false, "allowNumber": false}],
         "@typescript-eslint/restrict-plus-operands": "off",
-        "@typescript-eslint/semi": "warn"
+        "@typescript-eslint/semi": "error"
     }
 }
