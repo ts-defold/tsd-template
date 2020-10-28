@@ -30,6 +30,9 @@
                     "functions": [ "init", "on_input", "on_message", "on_reload", "update", "final"]
                 }
             },
+            {
+                "name": "@ts-defold/tstl-userdata-sugar"
+            }
         ]
     }
 }
