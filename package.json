@@ -1,6 +1,6 @@
 {
   "name": "tsd-template",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "A minimalist Defold TypeScript template",
   "repository": "github:thejustinwalsh/defold-typescript",
   "keywords": [
