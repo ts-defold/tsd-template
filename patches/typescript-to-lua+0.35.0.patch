@@ -1,7 +1,16 @@
 diff --git a/node_modules/typescript-to-lua/dist/LuaPrinter.js b/node_modules/typescript-to-lua/dist/LuaPrinter.js
-index 5efaeba..4402aab 100644
+index 5efaeba..1a62f44 100644
 --- a/node_modules/typescript-to-lua/dist/LuaPrinter.js
 +++ b/node_modules/typescript-to-lua/dist/LuaPrinter.js
+@@ -147,7 +147,7 @@ let LuaPrinter = /** @class */ (() => {
+             if (luaLibImport === CompilerOptions_1.LuaLibImportKind.Always ||
+                 (luaLibImport === CompilerOptions_1.LuaLibImportKind.Require && luaLibFeatures.size > 0)) {
+                 // Require lualib bundle
+-                header += 'require("lualib_bundle");\n';
++                header += 'require("lualib_bundle")\n';
+             }
+             else if (luaLibImport === CompilerOptions_1.LuaLibImportKind.Inline && luaLibFeatures.size > 0) {
+                 // Inline lualib features
 @@ -580,7 +580,7 @@ let LuaPrinter = /** @class */ (() => {
          // will not generate 'empty' mappings in the source map that point to nothing in the original TS.
          buildSourceMap(sourceRoot, rootSourceNode) {
