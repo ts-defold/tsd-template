@@ -19,11 +19,14 @@ A dev environment for [Defold](https://defold.com/) that transpiles TypeScript i
 ## Installation
 1. Fork this template or use [degit](https://www.npmjs.com/package/degit) to download the template locally
 ```bash
-npx degit @ts-defold/tsd-template --force
+npx degit ts-defold/tsd-template my-game
+# or
+git clone https://github.com/ts-defold/tsd-template.git my-game
 ```
 
 2. Initialize
 ```bash
+cd my-game
 npm install
 ```
 
@@ -31,7 +34,7 @@ npm install
 ```bash
 npm run build # Transpile the TypeScript files to lua
 # or
-npm run watch # Watch for changes and regenerate files on save
+npm run dev # Watch for changes and regenerate files on save
 ```
 
 4. Code
