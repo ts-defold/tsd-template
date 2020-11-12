@@ -23,7 +23,7 @@
     "@ts-defold/tstl-export-as-global": "^0.0.4",
     "@ts-defold/tstl-userdata-sugar": "^0.1.0",
     "@ts-defold/types": "^1.1.13",
-    "@typescript-eslint/eslint-plugin": "^4.4.0",
+    "@typescript-eslint/eslint-plugin": "^4.7.0",
     "@typescript-eslint/parser": "^4.4.0",
     "eslint": "^7.10.0",
     "patch-package": "^6.2.2",
