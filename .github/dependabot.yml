@@ -5,5 +5,5 @@ updates:
     schedule:
       interval: "daily"
     allow:
-    - dependency-name: "@ts-defold*"
+      - dependency-name: "@ts-defold*"
       
