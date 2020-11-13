@@ -1,8 +1,12 @@
 # Defold Files
-*.atlas linguist-language=JSON5
-*.collection linguist-language=JSON5
-*.font linguist-language=JSON5
-*.go linguist-language=JSON5
-*.gui linguist-language=JSON5
-*.tilemap linguist-language=JSON5
-*.tilesource linguist-language=JSON5
+*.atlas linguist-language=protobuf
+*.collection linguist-language=protobuf
+*.factory linguist-language=protobuf
+*.font linguist-language=protobuf
+*.go linguist-language=protobuf
+*.gui linguist-language=protobuf
+*.sprite linguist-language=protobuf
+*.tilemap linguist-language=protobuf
+*.tilesource linguist-language=protobuf
+*.script linguist-language=Lua
+*.gui_script linguist-language=Lua
