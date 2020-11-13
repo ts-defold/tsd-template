@@ -1,12 +1,12 @@
 # Defold Files
-*.atlas linguist-language=protobuf
-*.collection linguist-language=protobuf
-*.factory linguist-language=protobuf
-*.font linguist-language=protobuf
-*.go linguist-language=protobuf
-*.gui linguist-language=protobuf
-*.sprite linguist-language=protobuf
-*.tilemap linguist-language=protobuf
-*.tilesource linguist-language=protobuf
+*.atlas linguist-language=Protocol-Buffer
+*.collection linguist-language=Protocol-Buffer
+*.factory linguist-language=Protocol-Buffer
+*.font linguist-language=Protocol-Buffer
+*.go linguist-language=Protocol-Buffer
+*.gui linguist-language=Protocol-Buffer
+*.sprite linguist-language=Protocol-Buffer
+*.tilemap linguist-language=Protocol-Buffer
+*.tilesource linguist-language=Protocol-Buffer
 *.script linguist-language=Lua
 *.gui_script linguist-language=Lua
