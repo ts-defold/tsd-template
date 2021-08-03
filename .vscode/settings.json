@@ -1,7 +1,11 @@
 {
     "files.associations": {
         "*.script": "lua",
-        "*.gui_script": "lua"
+        "*.gui_script": "lua",
+        "*.project": "ini",
+        "*.collection": "textproto",
+        "*.atlas": "textproto",
+        "*.input_binding": "textproto"
     },
     "files.exclude": {
         "node_modules/": true,
