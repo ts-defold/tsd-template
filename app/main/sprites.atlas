@@ -1,5 +1,5 @@
 images {
-  image: "/assets/ts-defold.png"
+  image: "/assets/ts-defold.jpg"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 images {
