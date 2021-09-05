@@ -1,6 +1,6 @@
 {
 	"recommendations": [
-		"ark120202.vscode-typescript-to-lua",
+		"typescript-to-lua.vscode-typescript-to-lua",
 		"dbaeumer.vscode-eslint",
 		"thejustinwalsh.textproto-grammer"
 	],

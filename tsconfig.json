@@ -1,4 +1,5 @@
 {
+    "$schema": "https://raw.githubusercontent.com/TypeScriptToLua/vscode-typescript-to-lua/master/tsconfig-schema.json",
     "compilerOptions": {
         "target": "es2019",
         "lib": ["es2019"],
@@ -6,7 +7,7 @@
         "esModuleInterop": true,
         "experimentalDecorators": true,
         "moduleResolution": "node",
-        "types": ["@ts-defold/types"],
+        "types": ["@ts-defold/types", "typescript-to-lua/language-extensions"],
 
         "rootDir": "src",
         "outDir": "app",
