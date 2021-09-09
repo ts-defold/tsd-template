@@ -1,0 +1,24 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+      {
+          "name": "Debug",
+          "type": "lua-local",
+          "request": "launch",
+          "stopOnEntry": false,
+          "verbose": false,
+          "internalConsoleOptions": "openOnSessionStart",
+          "program": { "command": "bash" },
+          "osx": { "args": [".vscode/defold.sh", "launch", "macOS"] },
+          "linux": { "args": [".vscode/defold.sh", "launch", "Linux"] },
+          "windows": {
+              "args": [".vscode/defold.sh", "launch", "Windows"],
+              "program": { "command": "C:/Program Files/Git/bin/bash" }
+          },
+          "scriptRoots": [
+              "app",
+              "src"
+          ]
+      }
+  ]
+}

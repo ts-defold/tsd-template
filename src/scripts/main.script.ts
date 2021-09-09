@@ -1,5 +1,9 @@
-// import a module
+// Module import example
 import { Template } from "../modules/template";
+
+// Debugging support
+import * as lldebugger from "lldebugger.debug";
+lldebugger.start();
 
 interface props {
     excitement: number,

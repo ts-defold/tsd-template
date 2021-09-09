@@ -8,12 +8,14 @@
         "experimentalDecorators": true,
         "moduleResolution": "node",
         "types": ["@ts-defold/types", "typescript-to-lua/language-extensions"],
+        "typeRoots": ["@types", "node_modules/@types"],
 
         "rootDir": "src",
         "outDir": "app",
         "strict": true,
         "noUnusedLocals": false,
         "noUnusedParameters": false,
+        "sourceMap": true,
 
         "plugins": [{ "name": "typescript-tstl-plugin" }],
     },
@@ -24,6 +26,7 @@
     "tstl": {
         "luaTarget": "5.1",
         "luaLibImport": "require",
+        "sourceMapTraceback": true,
         "trimExtensions": true,
         "luaPlugins": [
             {
