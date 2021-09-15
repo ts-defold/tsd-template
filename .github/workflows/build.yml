@@ -22,7 +22,7 @@ jobs:
         java-version: 11.0.x
 
     - name: Retrieve Bob Builder
-      run: wget -O bob.jar https://github.com/defold/defold/releases/download/1.2.186/bob.bob.jar
+      run: wget -O bob.jar https://d.defold.com/archive/stable/1f748d5b0a84e8b5c58bf747e4c48d153ef77a52/bob/bob.jar
       
     - name: Install Dependencies
       run: npm install
