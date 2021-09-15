@@ -17,7 +17,7 @@
         "noUnusedParameters": false,
         "sourceMap": true,
 
-        "plugins": [{ "name": "typescript-tstl-plugin" }],
+        "plugins": [{ "name": "typescript-tstl-plugin" }]
     },
     "exclude": [
         "./node_modules/*",
