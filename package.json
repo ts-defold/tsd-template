@@ -22,7 +22,7 @@
   "devDependencies": {
     "@ts-defold/tstl-export-as-global": "^1.0.0",
     "@ts-defold/tstl-userdata-sugar": "^1.0.0",
-    "@ts-defold/types": "^1.2.1",
+    "@ts-defold/types": "^1.2.2",
     "@typescript-eslint/eslint-plugin": "^4.4.0",
     "@typescript-eslint/parser": "^4.4.0",
     "eslint": "^7.10.0",
