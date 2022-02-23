@@ -34,7 +34,7 @@
         "*.sprite": "textproto",
         "*.texture_profiles": "textproto",
         "*.tilemap": "textproto",
-        "*.tilesource": "textproto"
+        "*.tilesource": "textproto",
     },
     "files.exclude": {
         "node_modules/": true,

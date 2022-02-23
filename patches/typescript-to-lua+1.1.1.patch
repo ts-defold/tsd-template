@@ -1,8 +1,8 @@
 diff --git a/node_modules/typescript-to-lua/dist/LuaPrinter.js b/node_modules/typescript-to-lua/dist/LuaPrinter.js
-index 0e10499..37ccd7b 100644
+index cc752cc..3a878b3 100644
 --- a/node_modules/typescript-to-lua/dist/LuaPrinter.js
 +++ b/node_modules/typescript-to-lua/dist/LuaPrinter.js
-@@ -131,7 +131,7 @@ class LuaPrinter {
+@@ -137,7 +137,7 @@ class LuaPrinter {
          if (luaLibImport === CompilerOptions_1.LuaLibImportKind.Always ||
              (luaLibImport === CompilerOptions_1.LuaLibImportKind.Require && file.luaLibFeatures.size > 0)) {
              // Require lualib bundle
@@ -11,22 +11,13 @@ index 0e10499..37ccd7b 100644
          }
          else if (luaLibImport === CompilerOptions_1.LuaLibImportKind.Inline && file.luaLibFeatures.size > 0) {
              // Inline lualib features
-@@ -588,7 +588,7 @@ class LuaPrinter {
-     // will not generate 'empty' mappings in the source map that point to nothing in the original TS.
-     buildSourceMap(sourceRoot, rootSourceNode) {
-         const map = new source_map_1.SourceMapGenerator({
--            file: utils_1.trimExtension(this.sourceFile) + ".lua",
-+            file: utils_1.trimExtension(this.sourceFile) + (this.options.trimExtensions === true && /.*\..*\.ts$/.test(this.sourceFile) ?  "" : ".lua"),
-             sourceRoot,
-         });
-         let generatedLine = 1;
 diff --git a/node_modules/typescript-to-lua/dist/cli/parse.js b/node_modules/typescript-to-lua/dist/cli/parse.js
-index badf5ab..29a1ecb 100644
+index db65898..cb2ff61 100644
 --- a/node_modules/typescript-to-lua/dist/cli/parse.js
 +++ b/node_modules/typescript-to-lua/dist/cli/parse.js
-@@ -59,6 +59,11 @@ exports.optionDeclarations = [
-         description: "Provide verbose output useful for diagnosing problems.",
-         type: "boolean",
+@@ -64,6 +64,11 @@ exports.optionDeclarations = [
+         description: "An array of paths that tstl should not resolve and keep as-is.",
+         type: "array",
      },
 +    {
 +        name: "trimExtensions",
@@ -37,16 +28,16 @@ index badf5ab..29a1ecb 100644
  function updateParsedConfigFile(parsedConfigFile) {
      let hasRootLevelOptions = false;
 diff --git a/node_modules/typescript-to-lua/dist/transpilation/transpiler.js b/node_modules/typescript-to-lua/dist/transpilation/transpiler.js
-index 7c45747..f888d3d 100644
+index dbf746c..a3ed5dd 100644
 --- a/node_modules/typescript-to-lua/dist/transpilation/transpiler.js
 +++ b/node_modules/typescript-to-lua/dist/transpilation/transpiler.js
 @@ -90,7 +90,8 @@ function getEmitPathRelativeToOutDir(fileName, program) {
          emitPathSplits[0] = "lua_modules";
      }
      // Make extension lua
--    emitPathSplits[emitPathSplits.length - 1] = utils_1.trimExtension(emitPathSplits[emitPathSplits.length - 1]) + ".lua";
+-    emitPathSplits[emitPathSplits.length - 1] = (0, utils_1.trimExtension)(emitPathSplits[emitPathSplits.length - 1]) + ".lua";
 +    const trimExtensions = program.getCompilerOptions().trimExtensions;
-+    emitPathSplits[emitPathSplits.length - 1] = utils_1.trimExtension(emitPathSplits[emitPathSplits.length - 1]) + (trimExtensions === true && /.*\..*\.ts$/.test(emitPathSplits[emitPathSplits.length - 1]) ?  "" : ".lua");
++    emitPathSplits[emitPathSplits.length - 1] = (0, utils_1.trimExtension)(emitPathSplits[emitPathSplits.length - 1]) + (trimExtensions === true && /.*\..*\.ts$/.test(emitPathSplits[emitPathSplits.length - 1]) ?  "" : ".lua");
      return path.join(...emitPathSplits);
  }
  exports.getEmitPathRelativeToOutDir = getEmitPathRelativeToOutDir;

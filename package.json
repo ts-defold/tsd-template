@@ -15,20 +15,22 @@
   },
   "scripts": {
     "postinstall": "patch-package",
+    "resolve": "library resolve",
     "build": "tstl",
     "lint": "eslint src",
     "dev": "tstl --watch"
   },
   "devDependencies": {
+    "@ts-defold/library": "^0.1.1",
     "@ts-defold/tstl-export-as-global": "^1.0.0",
     "@ts-defold/tstl-userdata-sugar": "^1.0.0",
-    "@ts-defold/types": "^1.2.1",
+    "@ts-defold/types": "^1.2.10",
     "@typescript-eslint/eslint-plugin": "^4.4.0",
     "@typescript-eslint/parser": "^4.4.0",
     "eslint": "^7.10.0",
     "patch-package": "^6.2.2",
     "typescript": "4.3.4",
-    "typescript-to-lua": "^1.0.1",
+    "typescript-to-lua": "1.1.1",
     "typescript-tstl-plugin": "^0.2.0"
   }
 }
