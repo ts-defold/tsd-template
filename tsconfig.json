@@ -31,7 +31,7 @@
         "luaPlugins": [
             {
                 "name": "@ts-defold/tstl-export-as-global",
-                "match": ".*\\.(gui_|editor_)?script.ts$",
+                "match": ".*\\..*script.ts$",
                 "globals": { 
                     "functions": [ "init", "on_input", "on_message", "on_reload", "update", "final"]
                 }
