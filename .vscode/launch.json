@@ -1,24 +1,30 @@
 {
-  "version": "0.2.0",
-  "configurations": [
-      {
-          "name": "Debug",
-          "type": "lua-local",
-          "request": "launch",
-          "stopOnEntry": false,
-          "verbose": false,
-          "internalConsoleOptions": "openOnSessionStart",
-          "program": { "command": "bash" },
-          "osx": { "args": [".vscode/defold.sh", "launch", "macOS"] },
-          "linux": { "args": [".vscode/defold.sh", "launch", "Linux"] },
-          "windows": {
-              "args": [".vscode/defold.sh", "launch", "Windows"],
-              "program": { "command": "C:/Program Files/Git/bin/bash" }
-          },
-          "scriptRoots": [
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug",
+            "type": "lua-local",
+            "request": "launch",
+            "stopOnEntry": false,
+            "verbose": false,
+            "internalConsoleOptions": "openOnSessionStart",
+            "preLaunchTask": "build",
+            "program": {
+                "command": "${workspaceFolder}/app/build/default/dmengine",
+            },
+            "args": ["${workspaceFolder}/app/build/default/game.projectc"],
+            "windows": {
+                "program": { "command": "${workspaceFolder}/app/build/default/dmengine.exe" }
+            },
+            "scriptRoots": [
               "app",
               "src"
-          ]
-      }
-  ]
-}
+            ],
+            "scriptFiles": [
+              "app/**/*.lua",
+              "app/**/*.script",
+              "app/**/*.gui_script"
+            ]
+        }
+    ]
+  }

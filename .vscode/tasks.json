@@ -2,20 +2,77 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
-			"type": "npm",
-			"script": "build",
+			"type": "defold",
+			"action": "build",
+			"configuration": "debug",
+			"platform": "current",
+			"problemMatcher": [
+				"$defold-build"
+			],
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": false,
+				"panel": "dedicated",
+				"clear": true
+			},
+			"label": "build",
+			"detail": "Build the project for running, debugging or testing",
+			"dependsOn": ["compile"]
+		},
+		{
+			"type": "defold",
+			"action": "run",
+			"configuration": "debug",
+			"platform": "current",
+			"problemMatcher": [
+				"$defold-build"
+			],
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": false,
+				"panel": "dedicated",
+				"clear": true
+			},
+			"label": "build & run",
+			"detail": "Build the project for running, debugging or testing",
 			"group": {
 				"kind": "build",
 				"isDefault": true
 			},
-			"problemMatcher": [],
-			"label": "build",
+			"dependsOn": ["build"]
+		},
+		{
+			"type": "defold",
+			"action": "bundle",
+			"configuration": "release",
+			"platform": "html5",
+			"problemMatcher": [
+				"$defold-build"
+			],
+			"label": "bundle html5",
+			"detail": "Build the project for running, debugging or testing",
+			"dependsOn": ["compile"]
+		},
+		{
+			"type": "npm",
+			"script": "build",
+			"problemMatcher": ["$tsc"],
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": false,
+				"panel": "dedicated",
+				"clear": true
+			},
+			"label": "compile",
 			"detail": "tstl"
 		},
 		{
 			"type": "npm",
 			"script": "dev",
-			"problemMatcher": [],
+			"problemMatcher": ["$tsc-watch"],
 			"label": "watch",
 			"detail": "tstl --watch"
 		}
