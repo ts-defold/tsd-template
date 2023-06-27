@@ -7,7 +7,7 @@
         "esModuleInterop": true,
         "experimentalDecorators": true,
         "moduleResolution": "node",
-        "types": ["@ts-defold/types", "typescript-to-lua/language-extensions"],
+        "types": ["@ts-defold/types", "@typescript-to-lua/language-extensions"],
         "typeRoots": ["@types", "node_modules/@types"],
 
         "rootDir": "src",
@@ -27,7 +27,6 @@
         "luaTarget": "5.1",
         "luaLibImport": "require",
         "sourceMapTraceback": true,
-        "trimExtensions": true,
         "luaPlugins": [
             {
                 "name": "@ts-defold/tstl-export-as-global",
@@ -38,6 +37,9 @@
             },
             {
                 "name": "@ts-defold/tstl-userdata-sugar"
+            },
+            {
+                "name": "tstl-trim-extensions"
             }
         ]
     }
