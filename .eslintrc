@@ -13,9 +13,16 @@
         "plugin:@typescript-eslint/recommended-requiring-type-checking"
     ],
     "rules": {
+        "eqeqeq": "error",
+        "@typescript-eslint/ban-types": ["error", {
+            "types": {
+                "null": "Use `undefined` as the equivalent to Lua's `nil`",
+                "bigint": "Arbitrary-precision arithmetic is unsupported in Lua 5.1"
+            },
+            "extendDefaults": true
+        }],
         "@typescript-eslint/no-unused-vars": ["error", {"args": "all", "argsIgnorePattern": "^_"}],
         "@typescript-eslint/strict-boolean-expressions": ["error", {"allowString": false, "allowNumber": false}],
-        "@typescript-eslint/restrict-plus-operands": "off",
-        "@typescript-eslint/semi": "error"
+        "@typescript-eslint/restrict-plus-operands": "off"
     }
 }
