@@ -21,7 +21,7 @@
     "dev": "tstl --watch"
   },
   "devDependencies": {
-    "@ts-defold/library": "^0.1.1",
+    "@ts-defold/library": "^0.1.3",
     "@ts-defold/tstl-export-as-global": "^1.0.0",
     "@ts-defold/tstl-userdata-sugar": "^1.0.0",
     "@ts-defold/types": "^1.2.10",
