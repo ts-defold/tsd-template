@@ -16,10 +16,11 @@ jobs:
       with:
         node-version: 16.x
       
-    - name: Set up JDK 11
+    - name: Set up JDK
       uses: actions/setup-java@v1
       with:
-        java-version: 11.0.x
+        distribution: 'temurin'
+        java-version: '17'
 
     - name: Retrieve Bob Builder
       run: wget -O bob.jar https://d.defold.com/archive/stable/1f748d5b0a84e8b5c58bf747e4c48d153ef77a52/bob/bob.jar
