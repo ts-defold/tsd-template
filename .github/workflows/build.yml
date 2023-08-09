@@ -22,8 +22,8 @@ jobs:
         distribution: 'temurin'
         java-version: '17'
 
-    - name: Retrieve Bob Builder
-      run: wget -O bob.jar https://d.defold.com/archive/stable/1f748d5b0a84e8b5c58bf747e4c48d153ef77a52/bob/bob.jar
+    - name: Setup Defold
+      uses: dapetcu21/setup-defold@v3.0.2
       
     - name: Install Dependencies
       run: npm install
@@ -32,4 +32,4 @@ jobs:
       run: npm run build
 
     - name: Build
-      run: java -jar bob.jar --root ./app --archive --platform js-web --verbose resolve distclean build bundle
+      run: 'java -jar $BOB --root ./app --archive --platform js-web --verbose resolve distclean build bundle'
