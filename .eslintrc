@@ -15,10 +15,13 @@
         "eqeqeq": "error",
         "@typescript-eslint/ban-types": ["error", {
             "types": {
-                "null": "Use `undefined` as the equivalent to Lua's `nil`",
-                "bigint": "Arbitrary-precision arithmetic is unsupported in Lua 5.1"
+                "null": {
+                    "message": "Use `undefined` as the equivalent to Lua's `nil`",
+                    "fixWith": "undefined",
+                    "suggest": ["undefined"]
+                }
             },
-            "extendDefaults": true
+            "extendDefaults": false
         }],
         "no-unused-vars": "off",
         "@typescript-eslint/no-unused-vars": ["error", {"args": "all", "argsIgnorePattern": "^_"}],
