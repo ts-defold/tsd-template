@@ -30,7 +30,7 @@ export function update(this: props, _dt: number): void {
 }
 
 export function on_message(this: props, message_id: hash, _message: string, _sender: url): void {
-    if (message_id == hash("features")) {
+    if (message_id === hash("features")) {
         const features = this.template.features();
         for (let i = 0; i < features.length; ++i) {
             print(features[i]);
@@ -39,14 +39,14 @@ export function on_message(this: props, message_id: hash, _message: string, _sen
         print("To get started simply use `npm run` and get going!");
         msg.post("#", "usage");
     }
-    else if (message_id == hash("usage")) {
+    else if (message_id === hash("usage")) {
         print("  ✔ Use `npm run dev` to start a watcher that compiles and emits lua and script when you save");
         print("  ✔ Use `npm run build` to just compile your ts, sans watcher ");
 
         print("⌚ Stats!");
         msg.post("#", "stats");
     }
-    else if (message_id == hash("stats")) {
+    else if (message_id === hash("stats")) {
         print("Collected Garbage Size:", collectgarbage("count") * 1024);
         print(`We ❤ TypeScript and are ${this.excitement}% excited for TypeScript in Defold!`);
     }
