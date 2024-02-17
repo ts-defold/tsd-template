@@ -22,7 +22,7 @@
                     "suggest": ["undefined"]
                 }
             },
-            "extendDefaults": false
+            "extendDefaults": true
         }],
         "no-unused-vars": "off",
         "@typescript-eslint/no-unused-vars": ["error", {"args": "all", "argsIgnorePattern": "^_"}],
