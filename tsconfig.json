@@ -33,11 +33,8 @@
         "sourceMapTraceback": true,
         "luaPlugins": [
             {
-                "name": "@ts-defold/tstl-export-as-global",
                 "match": ".*\\..*script.ts$",
-                "globals": { 
-                    "functions": [ "init", "on_input", "on_message", "on_reload", "update", "fixed_update", "final"]
-                }
+                "name": "tstl-export-to-global"
             },
             {
                 "name": "@ts-defold/tstl-userdata-sugar"
