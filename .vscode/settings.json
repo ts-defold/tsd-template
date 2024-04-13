@@ -1,5 +1,9 @@
 {
-    "[typescript]": {
+  "editor.insertSpaces": false,
+	"editor.tabSize": 2,
+	"editor.detectIndentation": false,
+	"eslint.experimental.useFlatConfig": true,
+  "[typescript]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
 	"[json]": {
