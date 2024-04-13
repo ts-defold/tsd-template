@@ -6,9 +6,7 @@
 			"action": "build",
 			"configuration": "debug",
 			"platform": "current",
-			"problemMatcher": [
-				"$defold-build"
-			],
+			"problemMatcher": ["$defold-build"],
 			"presentation": {
 				"echo": true,
 				"reveal": "always",
@@ -25,9 +23,7 @@
 			"action": "run",
 			"configuration": "debug",
 			"platform": "current",
-			"problemMatcher": [
-				"$defold-build"
-			],
+			"problemMatcher": ["$defold-build"],
 			"presentation": {
 				"echo": true,
 				"reveal": "always",
@@ -48,9 +44,7 @@
 			"action": "bundle",
 			"configuration": "release",
 			"platform": "html5",
-			"problemMatcher": [
-				"$defold-build"
-			],
+			"problemMatcher": ["$defold-build"],
 			"label": "bundle html5",
 			"detail": "Build the project for running, debugging or testing",
 			"dependsOn": ["compile"]

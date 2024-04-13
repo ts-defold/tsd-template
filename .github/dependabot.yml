@@ -4,10 +4,9 @@ updates:
     directory: '/'
     schedule:
       interval: monthly
-  - package-ecosystem: "npm"
-    directory: "/"
+  - package-ecosystem: 'npm'
+    directory: '/'
     schedule:
-      interval: "daily"
+      interval: 'daily'
     allow:
-      - dependency-name: "@ts-defold*"
-      
+      - dependency-name: '@ts-defold*'
