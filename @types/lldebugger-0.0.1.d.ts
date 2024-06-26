@@ -3,5 +3,5 @@
 
 /** @noResolution */
 declare module 'lldebugger.debug' {
-  export function start(): void;
+	export function start(): void;
 }

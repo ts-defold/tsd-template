@@ -5,5 +5,6 @@
 		"dbaeumer.vscode-eslint",
 		"thejustinwalsh.textproto-grammer",
 		"ts-defold.defold-vscode-build",
-	],
+		"esbenp.prettier-vscode"
+	]
 }

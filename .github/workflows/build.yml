@@ -4,32 +4,31 @@ on: [push]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout 
-      uses: actions/checkout@v4
-      
-    - name: Setup Node
-      uses: actions/setup-node@v4
-      with:
-        node-version: 'lts/*'
-      
-    - name: Set up JDK
-      uses: actions/setup-java@v4
-      with:
-        distribution: 'temurin'
-        java-version: '17'
+      - name: Checkout
+        uses: actions/checkout@v4
 
-    - name: Setup Defold
-      uses: dapetcu21/setup-defold@v3.0.3
-      
-    - name: Install Dependencies
-      run: npm install
-      
-    - name: Genrate lua w/ ts-defold
-      run: npm run build
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 'lts/*'
 
-    - name: Build
-      run: 'java -jar $BOB --root ./app --archive --platform js-web --verbose resolve distclean build bundle'
+      - name: Set up JDK
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Setup Defold
+        uses: dapetcu21/setup-defold@v3.0.3
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Genrate lua w/ ts-defold
+        run: npm run build
+
+      - name: Build
+        run: 'java -jar $BOB --root ./app --archive --platform js-web --verbose resolve distclean build bundle'
