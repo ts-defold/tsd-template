@@ -54,4 +54,9 @@ export default tseslint.config(
 			'@typescript-eslint/restrict-plus-operands': 'off',
 		},
 	},
+	{
+		// disable type-aware linting on JS files
+		files: ['**/*.js', '**/*.mjs', '**/*.cjs'],
+		...tseslint.configs.disableTypeChecked,
+	},
 );
