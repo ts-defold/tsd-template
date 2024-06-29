@@ -31,6 +31,6 @@
 		"typescript": "5.5.2",
 		"typescript-eslint": "^7.6.0",
 		"typescript-to-lua": "~1.26.0",
-		"typescript-tstl-plugin": "^0.3.0"
+		"typescript-tstl-plugin": "^0.3.2"
 	}
 }

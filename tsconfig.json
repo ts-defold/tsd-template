@@ -6,13 +6,7 @@
 		"module": "commonjs",
 		"esModuleInterop": true,
 		"moduleResolution": "node",
-		"types": ["types", "language-extensions"],
-		"typeRoots": [
-			"./@types",
-			"./node_modules/@types",
-			"./node_modules/@typescript-to-lua",
-			"./node_modules/@ts-defold"
-		],
+		"types": ["@typescript-to-lua/language-extensions", "@ts-defold/types"],
 
 		"rootDir": "src",
 		"outDir": "app",
@@ -23,7 +17,7 @@
 
 		"plugins": [{ "name": "typescript-tstl-plugin" }]
 	},
-	"exclude": ["./node_modules/*", "./plugins/*"],
+	"exclude": ["./node_modules/*"],
 	"tstl": {
 		"luaTarget": "5.1",
 		"luaLibImport": "require",
