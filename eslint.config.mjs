@@ -18,7 +18,7 @@ export default tseslint.config(
 		},
 		rules: {
 			eqeqeq: 'error',
-			'@typescript-eslint/ban-types': [
+			'@typescript-eslint/no-restricted-types': [
 				'error',
 				{
 					types: {
@@ -28,7 +28,6 @@ export default tseslint.config(
 							suggest: ['undefined'],
 						},
 					},
-					extendDefaults: true,
 				},
 			],
 			'no-unused-vars': 'off',
