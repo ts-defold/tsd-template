@@ -19,7 +19,7 @@ jobs:
         uses: actions/setup-java@v5
         with:
           distribution: 'temurin'
-          java-version: '21'
+          java-version: '25'
 
       - name: Setup Defold
         uses: dapetcu21/setup-defold@v3.0.3
