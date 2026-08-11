@@ -8,10 +8,10 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Setup Node
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7
         with:
           node-version: 'lts/*'
 
@@ -31,4 +31,4 @@ jobs:
         run: npm run build
 
       - name: Build
-        run: 'java -jar $BOB --root ./app --archive --platform js-web --verbose resolve distclean build bundle'
+        run: 'java -jar $BOB --root ./app --archive --platform wasm-web --verbose resolve distclean build bundle'
